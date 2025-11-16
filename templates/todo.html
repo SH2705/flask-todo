@@ -1,30 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Add To-Do Item</title>
-</head>
-<body>
-  <h2>Add a To-Do Item</h2>
-
-  <form action="/submittodoitem" method="POST">
-
-    <label>Item ID:</label>
-    <input type="text" name="itemID" placeholder="Item ID" required><br><br>
-
-    <label>Item UUID:</label>
-    <input type="text" name="itemUUID" placeholder="Item UUID"><br><br>
-
-    <label>Item Hash:</label>
-    <input type="text" name="itemHash" placeholder="Item Hash"><br><br>
-
-    <label>Item Name:</label>
-    <input type="text" name="itemName" placeholder="Item Name" required><br><br>
-
-    <label>Item Description:</label>
-    <textarea name="itemDescription" placeholder="Item Description"></textarea><br><br>
-
-    <button type="submit">Submit Item</button>
-
-  </form>
-</body>
-</html>
+<form action="/submittodoitem" method="POST">
+  <input type="text" name="itemName" placeholder="Item Name" required><br>
+  <textarea name="itemDescription" placeholder="Item Description"></textarea><br>
+  <button type="submit">Add Item</button>
+  <input type="text" name="itemID" placeholder="Item ID">
+</form>
